@@ -4,15 +4,15 @@ namespace CoralMedia\BinaryRulesEvaluator;
 
 final class BinaryRulesEvaluator
 {
-	private array $rulesTable = [];
+    private array $rulesTable = [];
 
     public function setRulesTable(array $rulesTable): self
-	{
-		$this->rulesTable = $rulesTable;
-		return $this;
-	}
+    {
+        $this->rulesTable = $rulesTable;
+        return $this;
+    }
 
-	public function evaluate(array $input = [])
+    public function evaluate(array $input = [])
     {
         $validRuleSet = false;
         foreach ($this->rulesTable as $label => $ruleSet) {
